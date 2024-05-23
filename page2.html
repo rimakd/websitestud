@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>page-2</title>
+<link rel="stylesheet" href="page2.css">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+         <header class="hero">
+           
+            
+           <a href="#" class="logo"> University Kasdi <span> Merbah Ouargla </span></a>
+           <nav class="navbar"> 
+           
+            <a href="#"><i class='bx bx-home' style='color:#ffffff' ></i>  Home</a>
+         
+           </nav>
+        <img src="users.png" class="user.pic" onclick="toggleMenu()">
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="user.jpg">
+                    <h4>your account</h4>
+                </div>
+                <hr>
+                <a href="#" class="sub-menu-link">
+                    <img src="log.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            
+            </div>
+        </div>
+        </header>
+        <div class="box">
+                <img src="form1.jpg" alt="Form 1">
+                <img src="form2.jpg" alt="Form 2">
+                <img src="company1.jpg" alt="Company 1">
+                <img src="company2.jpg" alt="Company 2">
+                <img src="company3.jpg" alt="Company 3">
+            
+              <div class="content">
+                 <h1> <span>Click </span>Here</h1>
+                 <form>
+                      <i class='bx bxs-hand-right'></i>
+                       <button class="link">Link</button>
+                  
+                       <!--<input type="link" placeholder="the link">-->
+                    
+                     </form>
+                
+               </div>
+        </div>
+            <div class="Social-icons">
+                <a href="#"><i class='bx bxl-facebook'></i><!-- <span> Face Book</span>--> </a> 
+                <a href="#"><i class='bx bx-envelope'></i><!-- <span> Email</span>--> </a>
+                <a href="#"><i class='bx bxs-phone'></i> <!--<span> Phone</span>--> </a>
+               
+            </div>
+               
+           
+        
+    <script >
+        let subMenu =document.getElementById("subMenu");
+        function toggleMenu(){
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

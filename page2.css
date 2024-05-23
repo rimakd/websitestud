@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Jaini&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(77, 17, 71, 0.635), rgba(146, 88, 140, 0.635)), url("00.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto; /* Adjusted for dynamic content */
+    background: rgba(54, 23, 63, 0.26);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between images */
+}
+
+.box img {
+    width: 150px; /* Thumbnail size */
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.box img:hover {
+    transform: scale(1.1);
+}
+
+.hero {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 17px 30px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 25px;
+    color: #eaa7f3;
+    text-decoration: none;
+    font-weight: 700;
+    pointer-events: none;
+    font-family: 'Times New Roman', cursive;
+}
+
+.logo span {
+    font-size: 25px;
+    color: rgb(133, 70, 143);
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 550;
+    margin-left: 700px;
+    font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+}
+
+.user-pic {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.sub-menu-wrap {
+    position: absolute;
+    top: 80%;
+    right: 0.1%;
+    width: 300px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
+}
+
+.sub-menu {
+    background: rgba(255, 177, 252, 0.6);
+    padding: 20px;
+    margin: 10px;
+    width: 40vh;
+    height: 20vh;
+    border-radius: 14px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info h4 {
+    font-weight: 500;
+}
+
+.user-info img {
+    width: 30px;
+    border-radius: 10%;
+    margin-right: 15px;
+}
+
+.sub-menu hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #000;
+    margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    margin: 12px 0;
+}
+
+.sub-menu-link img {
+    width: 20px;
+    background: rgba(255, 177, 252, 0.6);
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.sub-menu-link p {
+    width: 100%;
+    font-size: 13px;
+}
+
+.sub-menu-link span {
+    font-size: 17px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover p {
+    font-weight: 600;
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90%;
+    max-width: 500px;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    color: rgb(234, 229, 238);
+}
+
+.content h1 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: rgb(71, 12, 71);
+}
+
+.content span {
+    color: #eaa7f3;
+}
+
+.content form {
+    background: #fff;
+    padding: 3px;
+    border-radius: 8px;
+    display: flex;
+}
+
+.content form i {
+    font-size: 20px;
+    color: #eaa7f3;
+}
+
+.content form input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.Social-icons {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Social-icons a {
+    color: #ffffff;
+    font-size: 35px;
+    margin: 0 60px; /* تكبير المسافة بين الأيقونات */
+    transition: 0.5s ease;
+}
+
+.Social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.link {
+    width: max-content;
+    color: #b63db6;
+    background-color: #fff;
+    padding: 1px 2px;
+    font-family: inherit;
+    font-size: clamp(0.8rem, 5vw, 1rem);
+    font-weight: 700;
+    outline: 0;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 1px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
